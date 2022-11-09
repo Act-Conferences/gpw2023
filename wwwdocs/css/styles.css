@@ -10098,7 +10098,8 @@ header.masthead {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
-  background-size: cover;
+  background-size:  contain;
+  background-color:  #04243d;
 }
 header.masthead .masthead-subheading {
   font-size: 1.5rem;
