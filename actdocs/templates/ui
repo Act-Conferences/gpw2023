@@ -2,8 +2,8 @@
 <html lang="[% global.request.language %]">
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no"> 
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0, shrink-to-fit=no">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <base href="[% make_uri('') %]" target="_top">
     <title>[% global.conference.name %]</title>
@@ -35,9 +35,10 @@
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#news"><t><de>Neuigkeiten</de><en>News</en></t></a></li>
 <!--
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="[% make_uri('schedule') %]"><t><de>Programm</de><en>Schedule</en></t></a></li>
-                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="[% make_uri('wiki') %]"><t><de>Wiki</de><en>Wiki</en></t></a></li>
 -->
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="[% make_uri('wiki') %]"><t><de>Wiki</de><en>Wiki</en></t></a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html#sponsors"><t><de>Sponsoren</de><en>Sponsors</en></t></a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="preise.html"><t><de>Preise</de><en>Entrance Fees</en></t></a></li>
 [% IF global.request.user %]
                         <li class="nav-item"><a class="nav-link" href="[% make_uri('main') %]"><t><de>Profil</de><en>Profile</en></t></a></li>
                         <li class="nav-item"><a class="nav-link" href="[% make_uri('logout') %]">Logout</a></li>
@@ -92,7 +93,7 @@
         <script src="assets/mail/contact_me.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <script type="text/javascript" src="/js/act.js" defer></script>	
+        <script type="text/javascript" src="/js/act.js" defer></script>
     </body>
 </html>
 
