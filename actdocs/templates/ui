@@ -64,7 +64,7 @@
 
 [% IF !mainpage %]
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 d-print-none">
                         <ul>
                             [% PROCESS menu %]
                         </ul>
