@@ -26,7 +26,7 @@
                 </a>
                 <ul class="dropdown-menu">
                     <!--<li><a href="index.html"><t><de>Start</de><en>Home</en></t> [% global.conference.name %]</a></li>-->
-                    
+
 <!--                    <li><a href="venue.html"><t><de>Veranstaltungsort</de><en>Venue</en></t></a></li> -->
 
                     <li>
@@ -39,14 +39,14 @@
 -->
                             <li class="lv3">
                                 <a href="[% make_uri('wanted.html') %]"><t><de>Vorschläge für Vorträge</de><en>Talk Suggestions</en></t></a>
-                            </li>                    
+                            </li>
                             <li class="lv3">
                                 <a href="[% make_uri('newtalk') %]"><t><de>Vortrag einreichen</de><en>Submit a talk proposal</en></t></a>
-                            </li>                        
+                            </li>
                         </ul>
-                    </li> 
-                                      
-                    
+                    </li>
+
+
                     <li><a href="[% make_uri('preise.html') %]"><t><de>Ticket-Preise</de><en>Ticket Prices</en></t></a></li>
 
 [% IF global.request.user.has_registered %]
@@ -55,26 +55,26 @@
                         <ul>
                             <li class="lv3">
                                 <a href="[% make_uri('search') %]"><t><de>Benutzer Suchen</de><en>Users - Search</en></t></a>
-                            </li>                    
+                            </li>
                             <li class="lv3">
                                 <a href="[% make_uri('stats') %]"><t><de>Benutzer Statistik</de><en>Users - Statistics</en></t></a>
-                            </li>                        
+                            </li>
                         </ul>
-                    </li> 
+                    </li>
 [% END %]
 
-                    
+
 <!--                    <li><a href="[% make_uri('hotels.html') %]"><t><de>Hotels &amp; Anreise</de><en>Hotels &amp; Arrivals</en></t></a></li> -->
                     <li>
                         <a href="[% make_uri('wiki') %]"><t><de>Wiki</de><en>Wiki</en></t></a>
                         <ul>
                             <li class="lv3">
                                 <a href="[% make_uri('wiki') %]"><t><de>Deutscher Perl/Raku-Workshop</de><en>German Perl/Raku Workshop</en></t></a>
-                            </li>                    
+                            </li>
 <!--
                             <li class="lv3">
                                 <a href="[% make_uri('wiki?node=VorabendTreffen') %]"><t><de>Vorabend-Treffen</de><en>Pre-Conference Meeting</en></t></a>
-                            </li>                        
+                            </li>
 -->
                         </ul>
                     </li>
@@ -82,7 +82,6 @@
 <!--                    <li><a href="press.html"><t><de>Presse</de><en>Press</en></t></a></li> -->
                 </ul>
             </li>
-<!--
             <li class="dropdown schedule lv1">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0);">
                     <t><de>Programm</de><en>Schedule</en></t> <span class="caret"></span>
@@ -94,14 +93,13 @@
                         <ul>
                             <li class="lv3">
                                 <a href="[% make_uri('timetable.ics') %]"><t><de>als iCal exportieren</de><en>iCal export</en></t></a>
-                            </li>                    
+                            </li>
                         </ul>
-                    </li> 
+                    </li>
 
                     <li><a href="[% make_uri('favtalks') %]"><t><de>Vorträge - Favorite Talks</de><en>Presentations - Favorite Talks</en></t></a></li>
                 </ul>
-            </li>           
--->
+            </li>
             <li class="news lv1">
                 <a href="news"><t><de>News</de><en>News</en></t></a>
             </li>
@@ -112,29 +110,29 @@
                 <ul class="dropdown-menu">
                     <li><a href="sponsoring.html"><t><de>Sponsor werden</de><en>Becoming a sponsor</en></t></a></li><!--Unterstützen/Sponsoring-->
                     <li><a href="sponsors.html"><t><de>Workshop Sponsoren</de><en>Conference sponsors</en></t></a></li>
-            </li>                    
+            </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
             <li class="register lv1">
                 [% IF global.request.user.has_registered %]
                     <a href="[% make_uri('main') %]"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                      <t><de>Profil</de><en>Profile</en></t>
-                    </a>                
-                [% ELSE %] 
+                    </a>
+                [% ELSE %]
                     <a href="[% make_uri('register') %]"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>
                      <t><de>Registrieren</de><en>Sign Up</en></t>
-                    </a>   
+                    </a>
                 [% END %]
             </li>
             <li class="login lv1">
                 [% IF global.request.user.has_registered %]
                     <a href="[% make_uri('logout') %]"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
                      <t><de>Logout</de><en>Log out</en></t>
-                    </a>                
-                [% ELSE %] 
+                    </a>
+                [% ELSE %]
                     <a href="[% make_uri('main') %]"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>
                      <t><de>Login</de><en>Log in</en></t>
-                    </a>   
+                    </a>
                 [% END %]
             </li>
             <li class="langchanger lv1"><!--todo:languagechanger link via perl-->
@@ -142,6 +140,6 @@
             </li>
         </ul>
     </div>
-</div>    
+</div>
 
 [% END %]
